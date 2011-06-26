@@ -11,7 +11,11 @@ ShowClasses[]=frontpage
 ShowClasses[]=forums
 ShowClasses[]=gallery
 ShowClasses[]=home
-ShowClasses[]=solutions
+ShowClasses[]=company
+ShowClasses[]=services
 ShowClasses[]=portfolio
+ShowClasses[]=contact
+ShowClasses[]=press
+ShowClasses[]=career
 
 */ ?>

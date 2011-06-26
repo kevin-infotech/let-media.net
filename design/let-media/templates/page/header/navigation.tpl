@@ -1,10 +1,9 @@
-{if and(is_set( $DesignKeys:used.url_alias), $DesignKeys:used.url_alias|count|ge(1) )}{def $avail_translation = language_switcher($DesignKeys:used.url_alias)}{else}{def $avail_translation = language_switcher( $site.uri.original_uri)}{/if}
-<ul id="nav" class="dropmenu">
-	<li class="haschildren">
-		<a id="nav-category" href="#">Category<span class="arrow"></span></a>
-		<div style="z-index: 1; display: none;" class="submenu shadow">
-			<p>e-Business, e-Commerce, e-Marketing, Internet Public Relations, e-Service, Application Development
-			Kevin InfoTech is a world leading Internet Information Technology & e-Business Agency. Focus on helping our clients roll out their e-Business strategy through professional ECM, CRM, e-Commerce, e-Marketing(Article Marketing, Internet Advertising, Email Direct Marketing, Search Engine Marketing, Social Media Marketing, and Affiliate Marketing), Internet Public Relations (Interactive Public Relations and Online Reputation Management), SNS, and e-Service solutions. The served clients are famous multinational corporations and leading local enterprises, including SONY, McKinsey, Deutsche Bank, Coca Cola, Disney, Estee Lauder, Grand Hyatt Hotel, Shanghai Stock Exchange, Changhong Electrics and so on.e-Business, e-Commerce, e-Marketing, Internet Public Relations, e-Service, Application Development</p>
-		</div>
-	</li>
-</ul> 
+
+			<!-- nav-main: #hd nav -->
+			<nav id="nav-main" class="grid_12">
+				{if $pagedesign.data_map.logo.content.is_valid|not()}<a id="logo" href={"/"|ezurl} title="{$pagedesign.data_map.name.data_text}">{ezini('SiteSettings','SiteName')|wash}</a>
+				{else}<a id="logo" href={"/"|ezurl} title="{$pagedesign.data_map.name.data_text}"><img src={$pagedesign.data_map.logo.content[original].full_path|ezroot} alt="{$pagedesign.data_map.logo.content[original].text}" width="{$pagedesign.data_map.logo.content[original].width}" height="{$pagedesign.data_map.logo.content[original].height}" /></a>{/if}
+			
+				<ul>{if $top_menu_items_count}{foreach $top_menu_items as $key => $item}{set $item_class = cond($current_node_in_path|eq($item.node_id), array("selected"), array())}{if $key|eq(0)}{set $item_class = $item_class|append("firstli")}{/if}{if $top_menu_items_count|eq( $key|inc )}{set $item_class = $item_class|append("lastli")}{/if}{if $item.node_id|eq( $current_node_id )}{set $item_class = $item_class|append("current")}{/if}{if eq( $item.class_identifier, 'link')}<li{if $item_class} class="{$item_class|implode(" ")}"{/if}><a {if eq( $ui_context, 'browse' )}href={concat("content/browse/", $item.node_id)|ezurl}{else}href={$item.data_map.location.content|ezurl}{if and( is_set( $item.data_map.open_in_new_window ), $item.data_map.open_in_new_window.data_int )} rel="external"{/if}{/if} title="{$item.data_map.location.data_text|wash}">{if $item.data_map.location.data_text}{$item.data_map.location.data_text|wash()}{else}{$item.data_map.short_name|wash()}{/if}</a></li>{else}<li{if $item_class} class="{$item_class|implode(" ")}"{/if}><a href={if eq( $ui_context, 'browse' )}{concat("content/browse/", $item.node_id)|ezurl}{else}{$item.url_alias|ezurl}{/if}>{$item.data_map.display_name.content|wash()}</a></li>{/if}{/foreach}{/if}</ul>
+			</nav>
+			<!-- /nav-main: #hd nav -->
