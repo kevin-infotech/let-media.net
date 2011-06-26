@@ -990,6 +990,12 @@ a em {
 	line-height: 38px;
 	text-shadow:0 -1px 1px #333;
 }
+#filter ul {
+	margin: 0;
+}
+#filter li {
+	list-style: none;
+}
 #filter .catagory {
 	margin-left: 10px;
 }
@@ -1076,6 +1082,7 @@ a em {
 
 .image-grid {
 	width: 960px;
+	margin: 0;
 }
 .image-grid li {
 	width: 280px;

@@ -645,4 +645,10 @@ MatchFile=full/home.tpl
 Subdir=templates
 Match[class_identifier]=home
 
+[full_portfolio]
+Source=node/view/full.tpl
+MatchFile=full/portfolio.tpl
+Subdir=templates
+Match[class_identifier]=portfolio
+
 */ ?>
