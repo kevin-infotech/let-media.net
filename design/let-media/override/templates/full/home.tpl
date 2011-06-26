@@ -13,5 +13,6 @@
 				</div>
 				<div id="meta-keywords" class="grid_12">{attribute_view_gui attribute=$node.object.data_map.meta_keywords}</div>
 				<div id="meta-description" class="grid_12">{attribute_view_gui attribute=$node.object.data_map.meta_description}</div>
+				<div>{$site_title}</div>
 			</div>
 		</div>

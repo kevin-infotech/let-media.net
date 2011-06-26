@@ -38,7 +38,7 @@
 		</nav>
 		<!-- sitemap: /#ft nav -->
 		<div class="grid_4">
-			<div>{$pagedesign.data_map.copyright.data_text} <a href="{$module_result.uri}{$pagedesign.data_map.terms_of_use.content}"><br>{$pagedesign.data_map.terms_of_use.data_text}</a> · <a href="{$module_result.uri}{$pagedesign.data_map.privacy_policy.content}">{$pagedesign.data_map.privacy_policy.data_text}</a></div>
+			<div>{$pagedesign.data_map.copyright.data_text} <a href="{$module_result.uri}{$pagedesign.data_map.terms_of_use.content}"><br>{$pagedesign.data_map.terms_of_use.data_text}</a> · <a href="{$module_result.uri}{$pagedesign.data_map.privacy_policy.content}">{$pagedesign.data_map.privacy_policy.data_text}</a> · <a href="{$module_result.uri}{$pagedesign.data_map.terms_copyright.content}">{$pagedesign.data_map.terms_copyright.data_text}</a></div>
 			<!-- #subscribe -->
 			<form action="http://kevin-media.us1.list-manage.com/subscribe/post?u=7d38512566efa9e2b7eea5882&amp;id=aaadbc99a7" method="post" id="subscribe" name="mc-embedded-subscribe-form">
 				<div class="box gradient-notice round glow clearfix">

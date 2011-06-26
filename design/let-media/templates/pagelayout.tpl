@@ -10,7 +10,7 @@
      $pagestyle        = $pagedata.css_classes
      $assets           = '//kit.com'
      $assets-global    = '//kit.com/global'
-     $assets-site      = '//kit.com/let-media'
+     $assets-site      = '//assets.let-media.net/let-media'
      $locales          = fetch('content', 'translation_list')
      $pagedesign       = $pagedata.template_look
      $current_node_id  = $pagedata.node_id

@@ -1,0 +1,323 @@
+.widget-reset div,
+.widget-reset form,
+.widget-reset a,
+.widget-reset ul,
+.widget-reset li {
+  border:0;
+  outline:0;
+  font-weight:inherit;
+  font-style:inherit;
+  font-size:100%;
+  font-family:inherit;
+  vertical-align:baseline;
+  margin:0;
+  padding:0;
+}
+#kevin-widget {
+  background:#f4f4f4 url(../img/widget/px.gif) repeat-y right top;
+  border:1px solid #bebebe;
+  border-left:none;
+  display:block!important;
+  font:13px/17px Helvetica, Arial, sans-serif;
+  height:132px;
+  left:0;
+  position:fixed;
+  top:185px;
+  width:24px;
+  z-index:890;
+  -webkit-border-top-right-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  -moz-border-radius-topright:3px;
+  -moz-border-radius-bottomright:3px;
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px;
+  -webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+  -moz-box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+  box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+}
+  #kevin-widget a.widget-button {
+    background-image:url(../img/widget/sprite.png);
+    background-repeat:no-repeat;
+    border-bottom:1px solid #fefefe;
+    border-top:1px solid #e4e4e4;
+    cursor:pointer;
+    display:block;
+    float:left;
+    height:31px;
+    text-indent:-9999px;
+    width:23px;
+  }
+  #kevin-widget a:hover.widget-button {
+    background-color:#eee;
+  }
+  #kevin-widget a.widget-button.envato {
+    background-position:-4px 0;
+    border-top:none;
+    height:32px;
+  }
+  #kevin-widget a.widget-button.search {
+    background-position:-4px -30px;
+  }
+  #kevin-widget a.widget-button.support {
+    background-position:-4px -60px;
+  }
+  #kevin-widget a.widget-button.community {
+    background-position:-4px -90px;
+  }
+  #kevin-widget .switcher-arrow {
+    background:url(../img/widget/arrow.gif) no-repeat left top;
+    display:block;
+    height:8px;
+    position:absolute;
+    width:5px;
+    z-index:910;
+  }
+  #kevin-widget-switcher-wrap .switcher-arrow,
+  #kevin-support-wrap .switcher-arrow,
+  #kevin-community-wrap .switcher-arrow {
+    left:18px;
+    top:15px;
+  }
+  #kevin-search-wrap .switcher-arrow {
+    left:18px;
+    top:22px;
+  }
+  #kevin-search-wrap {
+    display:none;
+    left:23px;
+    padding-left:22px;
+    position:absolute;
+    top:25px;
+    width:240px;
+    z-index:900;
+  }
+    #kevin-search {
+      background:#f4f4f4;
+      border:1px solid #bebebe;
+      overflow:hidden;
+      position:relative;
+      width:218px;
+      z-index:900;
+      -webkit-border-radius:3px;
+      -moz-border-radius:3px;
+      border-radius:3px;
+      -webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+      -moz-box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+      box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+      padding:10px;
+    }
+      #kevin-search form {
+        background:#fff;
+        border:1px solid #d5d5d5;
+        overflow:hidden;
+      }
+        #kevin-search form .ew-input {
+          background:#fff;
+          border:none;
+          color:#888;
+          float:left;
+          font-size:11px;
+          font-style:italic;
+          width:175px;
+          padding:8px 8px 7px;
+        }
+        #kevin-search form .ew-button {
+          background:none;
+          background-image:url(../img/widget/search.gif);
+          background-position:center center;
+          background-repeat:no-repeat;
+          border:none;
+          cursor:pointer;
+          float:right;
+          height:20px;
+          width:20px;
+          line-height:999px;
+          overflow:hidden;
+          font-size:0;
+          margin:4px 4px 0 0;
+        }
+  #kevin-widget-switcher-wrap {
+    display:none;
+    left:23px;
+    padding-left:22px;
+    position:absolute;
+    top:-1px;
+    width:320px;
+    z-index:900;
+  }
+    #kevin-widget-switcher {
+      background:#f4f4f4 url(../img/widget/px.gif) repeat-y center top;
+      border:1px solid #bebebe;
+      overflow:hidden;
+      position:relative;
+      width:318px;
+      z-index:900;
+      -webkit-border-radius:3px;
+      -moz-border-radius:3px;
+      border-radius:3px;
+      -webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+      -moz-box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+      box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+    }
+      #kevin-widget-switcher ul {
+        list-style:none;
+        float:left;
+        left:0;
+        width:158px;
+      }
+        #kevin-widget-switcher ul li {
+          border-bottom:1px solid #fefefe;
+          display:block;
+          padding:1px;
+        }
+        #kevin-widget-switcher ul li:last-child {
+          border-bottom:none;
+        }
+          #kevin-widget-switcher ul li a {
+            background:none;
+            color:#555;
+            display:block;
+            text-decoration:none;
+            width:138px;
+            padding:8px 10px;
+          }
+          #kevin-widget-switcher ul li a:hover {
+            background:#eee;
+            color:#000;
+          }
+      #kevin-widget-switcher .switcher-list-left {
+        margin-right:1px;
+      }
+  #kevin-support-wrap,
+  #kevin-community-wrap {
+    display:none;
+    left:23px;
+    padding-left:22px;
+    position:absolute;
+    top:66px;
+    width:240px;
+    z-index:900;
+  }
+  #kevin-community-wrap {
+    top:99px;
+  }
+    #kevin-support,
+    #kevin-community {
+      background:#f4f4f4;
+      border:1px solid #bebebe;
+      overflow:hidden;
+      position:relative;
+      width:218px;
+      z-index:900;
+      -webkit-border-radius:3px;
+      -moz-border-radius:3px;
+      border-radius:3px;
+      -webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+      -moz-box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+      box-shadow:1px 1px 3px rgba(0,0,0,0.10);
+    }
+      #kevin-support .kevin-widget-title,
+      #kevin-community .kevin-widget-title {
+        background:#eee;
+        border:1px solid #f4f4f4;
+        border-bottom-color: #fefefe;
+        color: #000;
+        display:block;
+        padding:8px 10px;
+        text-shadow: 0 1px 0 #f4f4f4;
+        width: 196px;
+        -webkit-border-top-right-radius:3px;
+        -webkit-border-top-left-radius:3px;
+        -moz-border-radius-topright:3px;
+        -moz-border-radius-topleft:3px;
+        border-top-right-radius:3px;
+        border-top-left-radius:3px;
+      }
+      #kevin-support ul,
+      #kevin-community ul {
+        list-style:none;
+        float:left;
+        left:0;
+        width:218px;
+      }
+        #kevin-support ul li,
+        #kevin-community ul li {
+          border-bottom:1px solid #fefefe;
+          display:block;
+          padding:1px;
+        }
+        #kevin-support ul li:last-child,
+        #kevin-community ul li:last-child {
+          border-bottom:none;
+        }
+          #kevin-support ul li a,
+          #kevin-community ul li a {
+            background:none;
+            color:#555;
+            display:block;
+            text-decoration:none;
+            width:198px;
+            padding:8px 10px;
+          }
+          #kevin-support ul li a:hover,
+          #kevin-community ul li a:hover {
+            background:#eee;
+            color:#000;
+          }
+/* Icons */
+#kevin-widget .widget-icon {
+  background: url(../img/widget/icon-sprite.png) no-repeat 0 0;
+  display: block;
+  float: left;
+  height: 16px;
+  margin-right: 9px;
+  width: 16px;
+}
+/* left */
+#kevin-widget .icon-envato { background-position: 0 0; }
+#kevin-widget .icon-themeforest { background-position: -16px 0; }
+#kevin-widget .icon-graphicriver { background-position: -32px 0; }
+#kevin-widget .icon-videohive { background-position: -48px 0; }
+#kevin-widget .icon-audiojungle { background-position: -64px 0; }
+#kevin-widget .icon-codecanyon { background-position: -80px 0; }
+#kevin-widget .icon-activeden { background-position: -96px 0; }
+#kevin-widget .icon-3docean { background-position: -112px 0; }
+#kevin-widget .icon-tutsmarketplace { background-position: -128px 0; }
+#kevin-widget .icon-mac { background-position: -144px 0; }
+#kevin-widget .icon-web { background-position: -160px 0; }
+#kevin-widget .icon-iphone { background-position: -176px 0; }
+#kevin-widget .icon-android { background-position: -192px 0; }
+#kevin-widget .icon-ipad { background-position: -208px 0; }
+#kevin-widget .icon-windows { background-position: -224px 0; }
+/* right */
+#kevin-widget .icon-freelanceswitch { background-position: 0 -16px; }
+#kevin-widget .icon-freelanceswitch-jobs { background-position: -16px -16px; }
+#kevin-widget .icon-rockablepress { background-position: -32px -16px; }
+#kevin-widget .icon-tutsplus { background-position: -48px -16px; }
+#kevin-widget .icon-psdtuts { background-position: -64px -16px; }
+#kevin-widget .icon-nettuts { background-position: -80px -16px; }
+#kevin-widget .icon-vectortuts { background-position: -96px -16px; }
+#kevin-widget .icon-audiotuts { background-position: -112px -16px; }
+#kevin-widget .icon-aetuts { background-position: -128px -16px; }
+#kevin-widget .icon-activetuts { background-position: -144px -16px; }
+#kevin-widget .icon-cgtuts { background-position: -160px -16px; }
+#kevin-widget .icon-phototuts { background-position: -176px -16px; }
+#kevin-widget .icon-mobiletuts { background-position: -192px -16px; }
+#kevin-widget .icon-webdesigntuts { background-position: -208px -16px; }
+#kevin-widget .icon-creattica { background-position: -224px -16px; }
+/* support */
+#kevin-widget .icon-kevin-support-center { background-position: 0 -32px; }
+#kevin-widget .icon-kevin-wiki { background-position: -16px -32px; }
+#kevin-widget .icon-kevin-support-twitter { background-position: -32px -32px; }
+/* community */
+#kevin-widget .icon-kevin-notes { background-position: 0 -48px; }
+#kevin-widget .icon-kevin-newsletter { background-position: -16px -48px; }
+#kevin-widget .icon-kevin-podcast { background-position: -32px -48px; }
+#kevin-widget .icon-wp-envato { background-position: -48px -48px; }
+#kevin-widget .icon-kevin-elite { background-position: -64px -48px; }
+#kevin-widget .icon-kevin-flickr { background-position: -80px -48px; }
+#kevin-widget .icon-kevin-twitter { background-position: -96px -48px; }
+#kevin-widget .icon-kevin-facebook { background-position: -112px -48px; }
+#kevin-widget .icon-kevin-slideshare { background-position: -128px -48px; }
+#kevin-widget .icon-kevin-dribbble { background-position: -144px -48px; }
+#kevin-widget .icon-kevin-github { background-position: -160px -48px; }

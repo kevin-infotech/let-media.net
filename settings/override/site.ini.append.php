@@ -25,7 +25,7 @@ SiteList[]=cn
 SiteList[]=jp
 SiteList[]=admincp
 RootNodeDepth=1
-SiteName=Let Media PR Agency
+SiteName=莱媒公关机构
 SiteURL=let-media.net
 
 [UserSettings]
